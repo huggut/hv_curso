@@ -1,0 +1,192 @@
+<!doctype html> <!-- indica al navegador que versión HTML se está utilizando -->
+
+<html lang="es"> <!-- indica el lenguaje en el que está diseñada la página web -->
+
+	<head>
+		
+		<meta charset="utf-8"> <!-- se incluye para el manejo de conjunto de caracteres especiales -->
+
+		<title>Taller de HTML desde cero</title> <!-- título que va a aparecer en la pestaña delnavegador web-->
+
+		>
+		<!-- la etiqueta <LINK> permite añadir más elemento -->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+
+		<!-- <script> se usa para añadir código de javascript al documento -->
+		<script type="text/javascript"> <!-- Para incluir código JavaScript-->
+			alert('Mensaje de JavaScript');
+		</script>
+
+	</head>
+
+	<body>
+		<hr> <!--agrega una línea horizontal -->
+
+		<h1>Título de nivel 1 </h1> <!-- inserta títulos de nivel 1 -->
+
+		<hr>
+
+		<div>este es un div, es una división o sección del documeento o para agrupra contenido de forma lógica</div>
+		<!-- la atiqueta <span> se usa para dividir pequeñas secciones de texto o algunas palabras de un texto -->
+		<div>También conocido como un <span>elemento en bloque o block element</span>, es decir, colocará otros elementos fuera de su camino</div>
+		<span>la etiqueta span no mueve los elementos fuera de su camni, es decir no afecta la posición de los elemento</span>
+
+		<!-- las etiquetas <strong> y <emphasis> son usadas para darle más importancia a partes de un texto
+		sin embargo no deben ser usadas para poner en cursiva o resaltar en negrita palabras -->
+		<p> <!-- para agregar párrafos de texto -->
+			<em>Un párrafo</em>, también llamado parágrafo <strong>(del griego παράγραφος [parágraphos], y este de παρα, «próximo, semejante», y γραφος, «escritura»)</strong>, es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo tema. Está compuesto por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo comienza con una mayúscula y termina en un punto y aparte. Comprende varias oraciones relacionadas sobre el mismo subtema; una de ellas expresa la idea principal.
+
+		</p>
+
+		<blockquote cite="http://google.com"> <!-- es un block element, el parámetri cite es opcional -->
+			<p>La eqtiqueta <mark style="background-color: red">blockquote</mark> utiliza para colocar citas literarias</p> <!-- <mark> resalta texto -->
+		</blockquote>
+
+		<!-- la etiqueta <q> marca la cita dentro de un mismo bloque añadiendo comillas -->
+		<p>Un hombre dijo alguna vez <q cite="http://albert.einstein.com">Si buscas resultados distintos, no hagas siempre lo mismo</q></p>
+
+		<!-- la etiqueta <abbr> sirve para etiquetar abreviaturas -->
+		<p>Cuando eres mayor de edad puedes obtener un <abbr title="Documento Nacional de Identificación">DNI</abbr></p>
+
+		<address> <!-- esta etiqueta agrupa información de contacto, si está dentro de la sección body este será el contacto para
+				todo el documento, si está dentro de una lista de empleados por ejemplo, la info estaría relacionada solo con el empleado -->
+			Hugo Gutierrez<br> <!-- la eqtiqueta <br> genera salto de línea -->
+			Calle 123<br>
+			Sucursal 27<br>
+			Pereira
+		</address>
+
+		<!-- <cite> marca un texto como cita y lo pone en cursiva, <wbr>parte una texto (ej:un link) que es muy largo para que continue en la otra linea -->
+		<p>Mi libro favorito de Pa<wbr>blo Nerura es <cite>20 poemas de amor y una canción desesperada</cite></p>
+
+		<ol> <!--lista ordenada -->
+			<li>Primer elemento</li>
+			<li>Segundo elemento</li>
+			<li>Tercer elemento</li>
+			<li>cuarto elemento</li>
+		</ol> 
+
+		<ul> <!--lista desordenada -->
+			<li>Primer elemento</li>
+			<ul>
+				<li>Segundo elemento</li>
+				<li>Tercer elemento</li>
+				<li>cuarto elemento</li>
+			</ul>
+			<li>Segundo elemento</li>
+			<li>Tercer elemento</li>
+			<li>cuarto elemento</li>
+		</ul> 
+
+		<dl> <!-- Lista de definiciones-->
+			<dt>Mamiferos</dt> <!-- Titulo de la definición -->
+				<dd>Elefante</dd> <!-- descripción de la definición-->
+				<dd>Leon</dd>
+
+			<dt>Insectos<dt>
+				<dd>mosca</dd>
+				<dd>escarabajo</dd>
+				<dd>abeja</dd>
+
+		</dl>
+
+		<a href="#enlace" id="milink">Mi link</a> <!-- Se usa para crear enlaces o links -->
+		
+		<p id="enlace">Mi link me llevó a este mensaje</p>
+
+		<a href="#milink">Regresar a Mi Link</a><br>
+
+		<a href="otrapagina.html">Otra página</a>
+
+		<!-- <img carga imagenes. SRC para asignar ruta y nombre de archivo. ALT, para describir imagen, muy importante
+			para motores de búsqueda. TITLE para que muestre descripción al pasar el cursor sobre la imagen-->
+		<figure> <!-- Se usa para insertar imagenes agrupadas -->
+			<img src="money.png" alt="dolares" title="Fajo de dolares"/>
+			<figcaption>imagen de dinero</figcaption> <!-- Esta etiqueta agrega una descripción bajo la imagen -->
+		</figure>
+
+		<!-- <iframe> sirve para combinar dos páginas web -->
+		<iframe width="300" height="300" src="otrapagina.html"></iframe>
+
+		<!-- <table>crear tablas. <tr> define filas. <td> describe la fila. <th> describe columna-->
+		<table border="1" cellpadding="5" cellspacing="5">
+
+			<!-- <thead> Añadir encabezados -->
+			<thead>
+				<tr>
+					<th>Estas son mis <br>Frutas favoritas</th>
+					<th valign="top">Color</th>
+				</tr>
+			</thead>
+
+			<!-- <tfoot> para añadir pie de página. <colspan> para combinar pie de página en dos columnas -->
+			<tfoot>
+				<tr>
+					<td colspan="2" align="center">Gracias por visitarnos</td>
+				</tr>
+			</tfoot>
+			
+			<tr>
+				<td>Mannaza</td>
+				<td>Roja</td>
+			</tr>
+
+			<tr>
+				<td>Naranja</td>
+				<td>Amarilla</td>
+			</tr>
+
+			<tr>
+				<td>Limón</td>
+				<td>Verde</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>azul</td>
+			</tr>
+		</table>
+
+		<!-- Formularios -->
+		<form action="#" method="POST" name="miformulario">
+
+			<label for="usuario">Nombre de usuario: </label>
+			<input type="text" name="usuario" id="usuario"><br>
+			<label for="contraseña">Contraseña: </label>
+			<input type="password" name="contraseña" id="contraseña"><br>
+			<input type="radio" name="genero" value="Masculino" id="masculino"><label for="masculino">masculino </label><br>
+			<input type="radio" name="genero" value="Femenino" id="femenino"><label for="femenino">Femenino </label><br>
+			<input type="checkbox" name="musica" value="Clasica" id="Clasica"><label for="Clasica">clasica </label><br>
+			<input type="checkbox" name="musica" value="Rock" id="Rock"><label for="Rock">rock </label><br>
+			<input type="checkbox" name="musica" value="Balada" id="Balada"><label for="Balada">Balada </label><br>
+
+			<!-- Para agregar área de texto. ej: casilla de comentarios -->
+			<label for="mensaje">Envianos un mensaje o comentario</label><br>
+			<textarea name="mensaje" rows="10" cols="30" id="mensaje"></textarea><br>
+
+			<!-- lista de opciones -->
+			<label for="comida">Tú comida favorita</label>
+			<select id="comida">
+
+				<optgroup label="Carnes">				
+					<option>Pollo</option>
+				<	option>carne de Cerdo</option>
+					<option>Pescado</option>
+				</optgroup>
+					<optgroup label="Vegetales">
+					<option>brocoli</option>
+					<option>lechuga</option>
+					<option>zanahoria</option>
+				</optgroup>
+
+			</select><br>
+			<input type="submit" name="Enviar"><br>
+
+			
+
+		</form>
+
+
+	<body>
+
+</html> 

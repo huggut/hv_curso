@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilos.css">
+  <script src='jquery-1.7.1.min.js'></script>
+  <script src="kinetic-v4.3.1.min.js"></script>
+  <title>Formulario contactos</title>
+</head>
+<body>
+  <form action="contacto.php" method="post">
+    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+    <input type="email" placeholder="Ingresar email" id="email" name="email">
+	<input type="text" placeholder="Ingresar Asunto" id="asunto" name="asunto">
+    <textarea name="mensaje" rows="8" cols="47" id="textarea" placeholder="Ingresar Mensaje aqui"></textarea>
+    <input type="submit" name="button" value="Enviar Mensaje" id="button">
+  </form>
+<!--  <script>
+			$(#button).on("click",function(){
+			$(button).fadeout();
+			echo "El mensaje ha sido enviado a nuestro correo";
+		});
+  </script>
+  <script src='mainscript.js'></script>  
+  <script src="mensaje.js"></script> -->
+</body>
+</html>

@@ -20,7 +20,6 @@
 	}else{
 		echo "El mensaje no pudo ser enviado, por favor intente más tarde";
 	}*/
-
-//  header ("location: index.html");
+  header ("location: index.html");
 
  ?>
